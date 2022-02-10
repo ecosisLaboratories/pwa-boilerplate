@@ -4,6 +4,8 @@ import DotEnv from 'dotenv'
 DotEnv.config()
 
 export default {
+  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
+  ssr: false,
   // https://nuxtjs.org/guides/configuration-glossary/configuration-target
   target: 'static',
 
@@ -18,7 +20,7 @@ export default {
   },
 
   // https://nuxtjs.org/guides/configuration-glossary/configuration-plugins
-  plugins: [],
+  plugins: ['~/plugins/mijin.js'],
 
   // https://nuxtjs.org/guides/configuration-glossary/configuration-css
   css: ['~/assets/styles/app'],
