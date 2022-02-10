@@ -1,9 +1,7 @@
 <template>
-  <main class="container mx-auto px-4 lg:px-8 pt-4">
-    <app-appear-disappear />
-    <app-links :items="links" />
+  <main class="container mx-auto px-4 lg:px-8 pt-4 h-screen">
     <div class="flex flex-wrap relative">
-      <nuxt class="w-full lg:w-4/5" />
+      <nuxt class="max-h-screen overflow-y-scroll w-full lg:w-4/5" />
     </div>
     <app-switch-theme />
   </main>
@@ -11,18 +9,14 @@
 
 <script lang="ts">
 import { defineComponent, ref } from '@nuxtjs/composition-api'
-import AppAppearDisappear from '~/components/AppAppearDisappear.vue'
-import AppLinks, { AppLinkItem } from '~/components/AppLinks.vue'
 import AppSwitchTheme from '~/components/AppSwitchTheme.vue'
 
 export default defineComponent({
   components: {
-    AppAppearDisappear,
-    AppLinks,
     AppSwitchTheme
   },
   setup() {
-    const links = ref<AppLinkItem[]>([
+    const links = ref([
       { to: '/', text: 'Home' },
       { to: '/random-image', text: 'Random Image' }
     ])

@@ -55,14 +55,14 @@ export const actions = actionTree(
     async GET_USER() {
       await this.app.$accessor.SET_USER({
         user: {
-          name: 'jefrydco',
+          name: '',
           age: 22
         }
       })
     },
     async GET_TOKEN() {
       await this.app.$accessor.SET_TOKEN({
-        token: 'lorem-ipsum'
+        token: ''
       })
     }
   }
