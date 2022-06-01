@@ -1,10 +1,16 @@
 <template>
-  <main class="container mx-auto px-4 lg:px-8 pt-4 h-screen">
-    <div class="flex flex-wrap relative">
-      <nuxt class="max-h-screen overflow-y-scroll w-full lg:w-4/5" />
-    </div>
-    <app-switch-theme />
-  </main>
+  <div class="h-screen safe-top safe-left safe-right safe-bottom">
+    <nav
+      class="flex flex-row-reserve w-full container mx-auto px-4 lg:px-8 pb-2"
+    >
+      <AppSwitchTheme />
+    </nav>
+    <main class="disable-scrollbars max-h-screen h-full overflow-y-scroll p-4">
+      <nuxt
+        class="container mx-auto bg-gray-100 text-gray-900 dark:bg-gray-800 dark:text-white rounded rounded-full p-8"
+      />
+    </main>
+  </div>
 </template>
 
 <script lang="ts">
@@ -16,10 +22,7 @@ export default defineComponent({
     AppSwitchTheme
   },
   setup() {
-    const links = ref([
-      { to: '/', text: 'Home' },
-      { to: '/random-image', text: 'Random Image' }
-    ])
+    const links = ref([{ to: '/', text: 'Home' }])
     return {
       links
     }
@@ -27,10 +30,27 @@ export default defineComponent({
   head() {
     return {
       bodyAttrs: {
-        class:
-          'antialiased text-gray-700 leading-normal bg-white dark:bg-gray-900 dark:text-gray-300'
+        class: 'antialiased text-gray-700 dark:text-white leading-normal'
       }
     }
   }
 })
 </script>
+
+<style>
+body {
+  @apply gradient;
+}
+
+input {
+  @apply outline-none;
+}
+textarea {
+  @apply outline-none;
+}
+
+.gradient {
+  background: radial-gradient(circle at 80% 20%, #31493c 0%, #011638 100%);
+  background-attachment: fixed;
+}
+</style>

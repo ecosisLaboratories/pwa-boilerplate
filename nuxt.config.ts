@@ -20,7 +20,7 @@ export default {
   },
 
   // https://nuxtjs.org/guides/configuration-glossary/configuration-plugins
-  plugins: ['~/plugins/mijin.js'],
+  plugins: [],
 
   // https://nuxtjs.org/guides/configuration-glossary/configuration-css
   css: ['~/assets/styles/app'],
@@ -157,6 +157,7 @@ export default {
 
   // https://nuxtjs.org/api/configuration-build
   build: {
+    publicPath: '/nuxt/',
     postcss: {
       plugins: {
         'postcss-nested': {}

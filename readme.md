@@ -9,12 +9,6 @@
 
 **⚠️ Please be aware that this starter project contains experimental composition API features that may subject unstable or changed in the future**
 
-## Languages
-
-Read this description in another languages:
-
-- [Indonesian](./readme-id.md)
-
 ## Features
 
 This starter project includes official Nuxt.js modules:
@@ -76,4 +70,4 @@ For detailed explanation on how things work, check out the [Nuxt.js](https://nux
 
 [MIT License](./license.md)
 
-Copyright (c) Jefry Dewangga ([@jefrydco](https://jefrydco.id))
+Copyright (c) [ecosis Laboratories](https://elabs.enterprises)

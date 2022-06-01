@@ -1,24 +1,26 @@
 {
-  "name": "nuxt-typescript-pwa-tailwindcss-composition-api",
-  "version": "0.0.1",
-  "private": true,
-  "description": "Nuxt Typescript PWA TailwindCSS Composition API Starter",
-  "homepage": "https://github.com/jefrydco/nuxt-typescript-pwa-tailwindcss-composition-api#readme",
+  "name": "Box",
+  "version": "0.0.2",
+  "description": "Web 3 Nuxt Typescript PWA TailwindCSS Composition API Capacitor Native Starter",
+  "homepage": "https://github.com/ecosisLaboratories/box#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jefrydco/nuxt-typescript-pwa-tailwindcss-composition-api.git"
+    "url": "https://github.com/ecosisLaboratories/box.git"
   },
   "license": "MIT",
   "author": {
-    "name": "Jefry Dewangga",
-    "url": "https://jefrydco.id"
+    "name": "eLabs Enterprises",
+    "url": "https://elabs.enterprises"
   },
   "scripts": {
-    "build": "nuxt build --modern",
     "dev": "nuxt",
     "generate": "nuxt generate --modern",
-    "lint": "eslint --ext .ts,.vue .",
+    "build": "nuxt build --modern",
     "start": "nuxt start",
+    "copy": "npx cap copy",
+    "dev:android": "npx cap open android",
+    "dev:io": "npx cap open ios",
+    "lint": "eslint --ext .ts,.vue .",
     "test": "npm run test:unit",
     "test:e2e": "cypress run",
     "test:e2e:open": "cypress open",
@@ -26,6 +28,10 @@
     "coverage": "codecov"
   },
   "dependencies": {
+    "@capacitor/android": "^3.4.1",
+    "@capacitor/cli": "^3.4.1",
+    "@capacitor/core": "^3.4.1",
+    "@capacitor/ios": "^3.4.1",
     "@nuxt/http": "^0.6.4",
     "@nuxt/typescript-runtime": "^2.1.0",
     "@nuxtjs/browserconfig": "^0.0.13",
@@ -34,7 +40,7 @@
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/sentry": "^5.0.2",
     "dotenv": "^8.2.0",
-    "mijin": "^1.9.1",
+    "konsta": "^0.7.1",
     "nuxt": "^2.15.3",
     "nuxt-typed-vuex": "^0.1.22",
     "vee-validate": "^3.4.5"
