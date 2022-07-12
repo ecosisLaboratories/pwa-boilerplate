@@ -1,7 +1,7 @@
 {
   "name": "Box",
-  "version": "0.0.2",
-  "description": "Web 3 Nuxt Typescript PWA TailwindCSS Composition API Capacitor Native Starter",
+  "version": "0.0.3",
+  "description": "Nuxt Typescript PWA TailwindCSS Composition API Capacitor Native Starter",
   "homepage": "https://github.com/ecosisLaboratories/box#readme",
   "repository": {
     "type": "git",
